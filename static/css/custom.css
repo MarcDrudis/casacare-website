@@ -497,14 +497,14 @@ body {
    Simple Homepage Hero - Full Screen
    ======================================== */
 
-/* Prevent any scroll on homepage */
-body {
+/* Prevent any scroll on homepage only */
+body.home {
     overflow: hidden;
     margin: 0;
     padding: 0;
 }
 
-#all {
+body.home #all {
     height: 100vh;
     overflow: hidden;
     margin: 0;
