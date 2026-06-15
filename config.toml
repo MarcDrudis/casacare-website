@@ -1,4 +1,7 @@
-baseURL = "https://casacare.ch/"
+# Use relative baseURL to work on any domain (Netlify subdomain or custom domain)
+# This prevents redirects to non-existent domains during development/staging
+# When custom domain is fully configured, this can optionally be changed to "https://casacare.ch/"
+baseURL = "/"
 title = "CasaCare - Professional Household Management Services"
 theme = "hugo-universal-theme"
 defaultContentLanguage = "en"
