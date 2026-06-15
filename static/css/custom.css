@@ -493,6 +493,151 @@ body {
 
 /* Made with Bob */
 
+/* ========================================
+   Simple Homepage Hero - Full Screen
+   ======================================== */
+
+/* Prevent any scroll on homepage */
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#all {
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.homepage-hero {
+    background-image: url('/images/homepage.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 !important;
+    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    display: flex;
+    align-items: flex-end;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.homepage-hero .container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Ensure nav and top bar are above hero and clickable */
+#top {
+    position: relative;
+    z-index: 100;
+}
+
+.navbar, .navbar-default, .navbar-affixed-top {
+    position: relative !important;
+    z-index: 100 !important;
+}
+
+/* Make sure dropdown menus work */
+.navbar .dropdown-menu {
+    z-index: 101;
+}
+
+.homepage-hero::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.5) 100%);
+    pointer-events: none;
+}
+
+.homepage-hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.homepage-hero .feature-blocks {
+    margin-top: 20px;
+}
+
+.homepage-hero .feature-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.homepage-hero .feature-item i {
+    font-size: 48px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    margin-bottom: 15px;
+    display: block;
+}
+
+.homepage-hero .feature-item h3 {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.4;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+.homepage-hero .feature-item:hover i {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.homepage-hero .feature-item:hover h3 {
+    transform: translateY(-3px);
+    transition: transform 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .homepage-hero {
+        min-height: 100vh;
+        padding-bottom: 40px;
+    }
+    
+    .homepage-hero .feature-item {
+        margin-bottom: 20px;
+    }
+    
+    .homepage-hero .feature-item i {
+        font-size: 40px;
+    }
+    
+    .homepage-hero .feature-item h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .homepage-hero .feature-item i {
+        font-size: 36px;
+    }
+    
+    .homepage-hero .feature-item h3 {
+        font-size: 15px;
+    }
+}
+
 
 /* ========================================
    Services Page Styles

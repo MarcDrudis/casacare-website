@@ -14,25 +14,39 @@
 
         {{ partial "nav.html" . }}
 
-        <!-- Custom Hero Section with Overlay -->
-        {{ partial "hero.html" . }}
-
-        <!-- Why CasaCare? Features Section -->
-        {{ partial "features.html" . }}
-
-        <!-- Testimonials (if enabled in config) -->
-        {{ partial "testimonials.html" . }}
-
-        <!-- See More / Call to Action -->
-        {{ partial "see_more.html" . }}
-
-        <!-- Recent Posts (if blog is enabled) -->
-        {{ partial "recent_posts.html" . }}
-
-        <!-- Clients (if enabled) -->
-        {{ partial "clients.html" . }}
-
-        {{ partial "footer.html" . }}
+        <!-- Simple Full-Screen Hero -->
+        <section class="homepage-hero">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="hero-content">
+                  <div class="feature-blocks">
+                    <div class="row">
+                      <div class="col-md-4 col-sm-4">
+                        <div class="feature-item">
+                          <i class="fas fa-user-friends"></i>
+                          <h3>{{ i18n "personalized_advice" }}</h3>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-4">
+                        <div class="feature-item">
+                          <i class="fas fa-award"></i>
+                          <h3>{{ i18n "highly_qualified_candidates" }}</h3>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-4">
+                        <div class="feature-item">
+                          <i class="fas fa-hands-helping"></i>
+                          <h3>{{ i18n "reliable_support_every_step" }}</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
     </div>
     <!-- /#all -->
