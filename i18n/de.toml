@@ -1,0 +1,508 @@
+# German translations for CasaCare website (Swiss German - de-CH)
+
+# Navigation
+[home]
+other = "Home"
+
+[aboutUs]
+other = "Über uns"
+
+[ourServices]
+other = "Unsere Dienstleistungen"
+
+[ourFees]
+other = "Unsere Gebühren"
+
+[payroll]
+other = "Lohnabrechnung"
+
+[contact]
+other = "Kontakt"
+
+# Common buttons and CTAs
+[getInTouch]
+other = "Kontaktieren Sie uns"
+
+[learnMore]
+other = "Mehr erfahren"
+
+[contactUs]
+other = "Kontaktieren Sie uns"
+
+[readMore]
+other = "Weiterlesen"
+
+[viewDetails]
+other = "Details anzeigen"
+
+[getStarted]
+other = "Jetzt starten"
+
+[requestQuote]
+other = "Offerte anfordern"
+
+[bookConsultation]
+other = "Beratung buchen"
+
+# Section headings
+[whyCasaCare]
+other = "Warum CasaCare?"
+
+[meetTheFounder]
+other = "Lernen Sie die Gründerin kennen"
+
+[ourApproach]
+other = "Unser Ansatz"
+
+[whatWeOffer]
+other = "Was wir anbieten"
+
+[pricingPlans]
+other = "Preispläne"
+
+[testimonials]
+other = "Was unsere Kunden sagen"
+
+[frequentlyAsked]
+other = "Häufig gestellte Fragen"
+
+# Contact information labels
+[email]
+other = "E-Mail"
+
+[phone]
+other = "Telefon"
+
+[address]
+other = "Adresse"
+
+[followUs]
+other = "Folgen Sie uns"
+
+# Form labels
+[name]
+other = "Name"
+
+[yourName]
+other = "Ihr Name"
+
+[emailAddress]
+other = "E-Mail-Adresse"
+
+[phoneNumber]
+other = "Telefonnummer"
+
+[subject]
+other = "Betreff"
+
+[message]
+other = "Nachricht"
+
+[yourMessage]
+other = "Ihre Nachricht"
+
+[send]
+other = "Senden"
+
+[sendMessage]
+other = "Nachricht senden"
+
+[submit]
+other = "Absenden"
+
+# Service-related
+[services]
+other = "Dienstleistungen"
+
+[allServices]
+other = "Alle Dienstleistungen"
+
+[serviceDetails]
+other = "Dienstleistungsdetails"
+
+[included]
+other = "Inbegriffen"
+
+[notIncluded]
+other = "Nicht inbegriffen"
+
+# Pricing-related
+[perMonth]
+other = "pro Monat"
+
+[perHour]
+other = "pro Stunde"
+
+[oneTime]
+other = "Einmalig"
+
+[monthly]
+other = "Monatlich"
+
+[annually]
+other = "Jährlich"
+
+[startingAt]
+other = "Ab"
+
+[from]
+other = "Ab"
+
+[chooseThisPlan]
+other = "Diesen Plan wählen"
+
+[mostPopular]
+other = "Am beliebtesten"
+
+[recommended]
+other = "Empfohlen"
+
+# About page
+[ourStory]
+other = "Unsere Geschichte"
+
+[ourMission]
+other = "Unsere Mission"
+
+[ourValues]
+other = "Unsere Werte"
+
+[ourTeam]
+other = "Unser Team"
+
+# Footer
+[allRightsReserved]
+other = "Alle Rechte vorbehalten"
+
+[privacyPolicy]
+other = "Datenschutzerklärung"
+
+[termsOfService]
+other = "Nutzungsbedingungen"
+
+[cookiePolicy]
+other = "Cookie-Richtlinie"
+
+# Time and date
+[monday]
+other = "Montag"
+
+[tuesday]
+other = "Dienstag"
+
+[wednesday]
+other = "Mittwoch"
+
+[thursday]
+other = "Donnerstag"
+
+[friday]
+other = "Freitag"
+
+[saturday]
+other = "Samstag"
+
+[sunday]
+other = "Sonntag"
+
+# Misc
+[yes]
+other = "Ja"
+
+[no]
+other = "Nein"
+
+[close]
+other = "Schliessen"
+
+[open]
+other = "Öffnen"
+
+[search]
+other = "Suchen"
+
+[loading]
+other = "Lädt..."
+
+[error]
+other = "Fehler"
+
+[success]
+other = "Erfolg"
+
+[back]
+other = "Zurück"
+
+[next]
+other = "Weiter"
+
+[previous]
+other = "Zurück"
+
+[page]
+other = "Seite"
+
+[of]
+other = "von"
+
+# CasaCare specific
+[professionalHouseholdManagement]
+other = "Professionelle Haushaltsmanagement-Dienstleistungen"
+
+[basedInSwitzerland]
+other = "Mit Sitz in der Schweiz"
+
+[trustedByFamilies]
+other = "Vertraut von Familien in der ganzen Schweiz"
+
+[yearsOfExperience]
+other = "Jahre Erfahrung"
+
+[satisfiedClients]
+other = "Zufriedene Kunden"
+
+[servicesOffered]
+other = "Angebotene Dienstleistungen"
+
+# Layout-specific translations
+[why_casacare]
+other = "Warum CasaCare?"
+
+[why_casacare_subtitle]
+other = "Ihr vertrauenswürdiger Partner für die Vermittlung von aussergewöhnlichem Hauspersonal"
+
+[dedicated]
+other = "Engagiert"
+
+[dedicated_desc]
+other = "Für unsere Kunden & Kandidaten"
+
+[international]
+other = "International"
+
+[international_desc]
+other = "Globales Netzwerk, lokale Experten"
+
+[discreet]
+other = "Diskret"
+
+[discreet_desc]
+other = "Ihre Privatsphäre ist gewährleistet"
+
+[trusted]
+other = "Vertrauenswürdig"
+
+[trusted_desc]
+other = "Bewährte Erfahrung"
+
+[connected]
+other = "Vernetzt"
+
+[connected_desc]
+other = "Die besten Kandidaten finden"
+
+[professional]
+other = "Professionell"
+
+[professional_desc]
+other = "Exzellenz bei jeder Vermittlung"
+
+# Service pricing translations
+[nanny_services]
+other = "Nanny-Dienstleistungen"
+
+[cleaning_services]
+other = "Reinigungsdienstleistungen"
+
+[private_chef]
+other = "Privatkoch"
+
+[hourly_rate]
+other = "Stundensatz"
+
+[daily_rate]
+other = "Tagessatz"
+
+[monthly_package]
+other = "Monatspaket"
+
+[upon_request]
+other = "Auf Anfrage"
+
+[background_checks]
+other = "Hintergrundprüfungen"
+
+[cpr_certified]
+other = "CPR-zertifiziert"
+
+[week]
+other = "Woche"
+
+[vetted_specialists]
+other = "Geprüfte Spezialisten"
+
+[eco_friendly]
+other = "Umweltfreundliche Produkte"
+
+[flexible_schedule]
+other = "Flexibler Zeitplan"
+
+[session]
+other = "Sitzung"
+
+[custom_menus]
+other = "Individuelle Menüs"
+
+[michelin_chefs]
+other = "Michelin-Sterne-Köche"
+
+[dietary_needs]
+other = "Ernährungsbedürfnisse"
+
+[learn_more]
+other = "Mehr erfahren"
+
+[our_services]
+other = "Unsere Dienstleistungen"
+
+[services_subtitle]
+other = "Professionelles Hauspersonal, massgeschneidert auf Ihre Bedürfnisse"
+
+# New service descriptions for cards
+[nanny_description]
+other = "Fürsorgliche, erfahrene Nannys, die zu geschätzten Mitgliedern Ihrer Familie werden."
+
+[cleaning_description]
+other = "Sorgfältige Fachkräfte, die Ihr Zuhause perfekt pflegen."
+
+[chef_description]
+other = "Kulinarische Exzellenz, massgeschneidert auf Ihre Vorlieben."
+
+[pricing]
+other = "Preise"
+
+[flexible_arrangements]
+other = "Vollzeit-, Teilzeit- oder Live-in-Arrangements"
+
+[temp_corporate]
+other = "Temporäre und betriebliche Kinderbetreuungslösungen"
+
+[regular_deep_cleaning]
+other = "Regelmässige Pflege oder Tiefenreinigung"
+
+[corporate_cleaning]
+other = "Betriebliche Reinigungslösungen"
+
+[diverse_expertise]
+other = "Vielfältige kulinarische Expertise"
+
+[batch_cooking]
+other = "Vorkochen und Essenszubereitung"
+
+[event_catering]
+other = "Event-Catering für besondere Anlässe"
+
+[custom_packages]
+other = "Individuelle Pakete"
+
+# Fee options translations
+[option]
+other = "Option"
+
+[one_time_fee]
+other = "Einmalige Gebühr"
+
+[monthly_salary]
+other = "Des Monatsgehalts"
+
+[payable_upfront]
+other = "Im Voraus zahlbar"
+
+[replacement_3months]
+other = "3-monatige Ersatzgarantie"
+
+[direct_contract]
+other = "Direkter Vertrag"
+
+[quitt_separate]
+other = "Quitt separat bezahlt"
+
+[monthly_fee]
+other = "Monatliche Gebühr"
+
+[of_salary]
+other = "Des Gehalts"
+
+[replacements_4x]
+other = "Bis zu 4 Ersatzpersonen"
+
+[free_service_voucher]
+other = "Kostenloser Service-Gutschein"
+
+[friend_vouchers]
+other = "3 Freunde-Gutscheine (50% Rabatt)"
+
+[quitt_included]
+other = "Quitt-Kosten inbegriffen"
+
+[hourly]
+other = "Stündlich"
+
+[contracts]
+other = "Verträge"
+
+[min_3hours]
+other = "Mindestens 3 Stunden"
+
+[flexible_scheduling]
+other = "Flexible Terminplanung"
+
+[replacements_extra]
+other = "Ersatz gegen Aufpreis"
+
+[prices_no_vat]
+other = "Die Preise verstehen sich ohne MwSt. Individuelle Pakete auf Anfrage erhältlich."
+
+[contact_us_today]
+other = "Kontaktieren Sie uns noch heute, um Ihren Bedarf an Hauspersonal zu besprechen"
+
+[ready_to_start]
+other = "Bereit anzufangen?"
+
+[need_help_choosing]
+other = "Benötigen Sie Hilfe bei der Auswahl?"
+
+[fee_help_text]
+other = "Unser Team hilft Ihnen gerne bei der Auswahl der besten Gebührenoption für Ihre spezifischen Bedürfnisse und Umstände."
+
+[get_in_touch]
+other = "Kontaktieren Sie uns"
+
+# Highlighted blocks on homepage
+[personalized_advice]
+other = "Persönliche Beratung"
+
+[highly_qualified_candidates]
+other = "Hochqualifizierte Kandidaten"
+
+[reliable_support_every_step]
+other = "Zuverlässige Unterstützung bei jedem Schritt"
+
+# Navigation
+[navToggle]
+other = "Navigation ein-/ausblenden"
+
+[one_time_match]
+other = "CasaCare Einmalige Vermittlung"
+
+[membership]
+other = "CasaCare Mitgliedschaft"
+
+[hourly_service]
+other = "CasaCare Stundenservice"
+
+[monthly_salary_20]
+other = "20% des Monatsgehalts"
+
+[hourly_contracts]
+other = "Stundenverträge"

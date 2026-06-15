@@ -337,7 +337,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- Language Dropdown Menu - Body Level -->
 <ul id="language-dropdown-menu" class="language-dropdown-nav" style="visibility: hidden; opacity: 0; position: fixed; top: 0; left: 0; min-width: 160px; border: 1px solid #e8dfd6; border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.15); background: #ffffff; z-index: 999999; transition: all 0.3s ease; transform: translateY(-10px); max-height: none; overflow: visible; list-style: none; padding: 0; margin: 0;">
     {{ range site.Languages }}
-    {{ if and (ne $.Language.Lang .Lang) (or (eq .Lang "en") (eq .Lang "ca")) }}
+    {{ if ne $.Language.Lang .Lang }}
     <li style="margin: 0;"><a href="/{{ .Lang }}/" style="padding: 10px 16px; color: #3a3a3a; font-size: 14px; font-family: 'Inter', sans-serif; transition: all 0.2s ease; display: flex; align-items: center; text-decoration: none;">
         <span style="margin-right: 8px; font-weight: 500;">{{ upper .Lang }}</span> {{ .LanguageName }}
     </a></li>

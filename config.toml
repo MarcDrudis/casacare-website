@@ -27,6 +27,33 @@ enableRobotsTXT = true
     title = "CasaCare - Serveis Professionals de Gestió de la Llar"
     [languages.ca.params]
       locale = "ca-ES"
+  
+  [languages.de]
+    languageName = "Deutsch"
+    languageCode = "de"
+    weight = 3
+    contentDir = "content/de"
+    title = "CasaCare - Ihr Partner für Haushaltsmanagement"
+    [languages.de.params]
+      locale = "de-CH"
+
+  [languages.fr]
+    languageName = "Français"
+    languageCode = "fr"
+    weight = 4
+    contentDir = "content/fr"
+    title = "CasaCare - Votre partenaire en gestion de ménage"
+    [languages.fr.params]
+      locale = "fr-CH"
+
+  [languages.it]
+    languageName = "Italiano"
+    languageCode = "it"
+    weight = 5
+    contentDir = "content/it"
+    title = "CasaCare - Il vostro partner per la gestione domestica"
+    [languages.it.params]
+      locale = "it-CH"
 
 # Site parameters
 [params]
@@ -163,6 +190,67 @@ enableRobotsTXT = true
   url = "/ca/fees/"
   weight = 4
 
+# Menu configuration - German
+[[languages.de.menu.main]]
+  name = "Home"
+  url = "/de/"
+  weight = 1
+
+[[languages.de.menu.main]]
+  name = "Über uns"
+  url = "/de/about/"
+  weight = 2
+
+[[languages.de.menu.main]]
+  name = "Unsere Dienstleistungen"
+  url = "/de/services/"
+  weight = 3
+
+[[languages.de.menu.main]]
+  name = "Unsere Gebühren"
+  url = "/de/fees/"
+  weight = 4
+
+[[languages.de.menu.main]]
+  name = "Lohnabrechnung"
+  url = "/de/payroll/"
+  weight = 5
+
+[[languages.de.menu.main]]
+  name = "Kontakt"
+  url = "/de/contact/"
+  weight = 6
+
+[[languages.fr.menu.main]]
+  name = "Accueil"
+  url = "/fr/"
+  weight = 1
+
+[[languages.fr.menu.main]]
+  name = "À propos de nous"
+  url = "/fr/about/"
+  weight = 2
+
+[[languages.fr.menu.main]]
+  name = "Nos services"
+  url = "/fr/services/"
+  weight = 3
+
+[[languages.fr.menu.main]]
+  name = "Nos tarifs"
+  url = "/fr/fees/"
+  weight = 4
+
+[[languages.fr.menu.main]]
+  name = "Gestion salariale"
+  url = "/fr/payroll/"
+  weight = 5
+
+[[languages.fr.menu.main]]
+  name = "Contact"
+  url = "/fr/contact/"
+  weight = 6
+
 [[languages.ca.menu.main]]
   name = "Nòmina"
   url = "/ca/payroll/"
@@ -171,4 +259,36 @@ enableRobotsTXT = true
 [[languages.ca.menu.main]]
   name = "Contacte"
   url = "/ca/contact/"
+  weight = 6
+
+
+# Menu configuration - Italian
+[[languages.it.menu.main]]
+  name = "Home"
+  url = "/it/"
+  weight = 1
+
+[[languages.it.menu.main]]
+  name = "Chi Siamo"
+  url = "/it/about/"
+  weight = 2
+
+[[languages.it.menu.main]]
+  name = "I Nostri Servizi"
+  url = "/it/services/"
+  weight = 3
+
+[[languages.it.menu.main]]
+  name = "Le Nostre Tariffe"
+  url = "/it/fees/"
+  weight = 4
+
+[[languages.it.menu.main]]
+  name = "Gestione Paghe"
+  url = "/it/payroll/"
+  weight = 5
+
+[[languages.it.menu.main]]
+  name = "Contatti"
+  url = "/it/contact/"
   weight = 6
