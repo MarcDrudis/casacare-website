@@ -1,7 +1,7 @@
 ---
 title: "Unsere Gebühren"
 description: "Transparente Vermittlungsgebühren für Ihre Bedürfnisse"
-featured_image: "/images/fees copy.jpg"
+featured_image: "/images/fees.jpg"
 bg_position: "center 20%"
 ---
 

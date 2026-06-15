@@ -1,7 +1,7 @@
 ---
 title: "Our Fees"
 description: "Transparent placement fee options for your needs"
-featured_image: "/images/fees copy.jpg"
+featured_image: "/images/fees.jpg"
 bg_position: "center 20%"
 ---
 

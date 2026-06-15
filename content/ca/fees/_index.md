@@ -1,7 +1,7 @@
 ---
 title: "Les Nostres Tarifes"
 description: "Descobriu les nostres opcions de tarifes transparents per a les vostres necessitats"
-featured_image: "/images/fees copy.jpg"
+featured_image: "/images/fees.jpg"
 bg_position: "center 20%"
 ---
 

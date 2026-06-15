@@ -17,7 +17,7 @@ enableRobotsTXT = true
     contentDir = "content/en"
     title = "CasaCare - Professional Household Management Services"
     [languages.en.params]
-      locale = "en-US"
+      locale = "en-GB"
   
   [languages.ca]
     languageName = "Català"

@@ -1,7 +1,7 @@
 ---
 title: "Le Nostre Tariffe"
 description: "Opzioni di tariffe di collocamento trasparenti per le vostre esigenze"
-featured_image: "/images/fees copy.jpg"
+featured_image: "/images/fees.jpg"
 bg_position: "center 20%"
 ---
 
