@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  <head>
+    {{ partial "headers.html" . }}
+    {{ partial "custom_headers.html" . }}
+    <style>
+      .payroll-wrapper {
+          background-color: #FAF8F5;
+          padding: 80px 0;
+      }
+      .payroll-content-card {
+          background: #FFFFFF;
+          padding: 70px 90px;
+          border-radius: 16px;
+          box-shadow: 0 15px 40px rgba(139, 115, 85, 0.08);
+          max-width: 900px;
+          margin: 0 auto;
+      }
+      .payroll-content-card h2 {
+          color: #D4A574;
+          font-size: 2.2rem;
+          margin-top: 3.5rem;
+          margin-bottom: 1.5rem;
+          border-bottom: 2px solid #E8D4B8;
+          padding-bottom: 10px;
+      }
+      .payroll-content-card > *:first-child {
+          margin-top: 0;
+      }
+      .payroll-content-card h3 {
+          color: #8B7355;
+          font-size: 1.5rem;
+          margin-top: 2.5rem;
+          margin-bottom: 1.5rem;
+          font-weight: 500;
+          letter-spacing: 0.5px;
+      }
+      .payroll-content-card p {
+          font-size: 1.15rem;
+          line-height: 1.8;
+          color: #4A4A4A;
+          margin-bottom: 1.5rem;
+      }
+      /* Style the interrogative questions at the top */
+      .payroll-content-card > p:nth-of-type(1),
+      .payroll-content-card > p:nth-of-type(2),
+      .payroll-content-card > p:nth-of-type(3) {
+          font-size: 1.25rem;
+          color: #8B7355;
+          font-style: italic;
+          background: #F5F1EB;
+          padding: 15px 25px;
+          border-left: 4px solid #D4A574;
+          border-radius: 4px;
+          margin-bottom: 15px;
+      }
+      /* Benefits List */
+      .payroll-content-card ul {
+          list-style: none;
+          padding: 0;
+          margin: 2rem 0;
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 15px;
+      }
+      .payroll-content-card ul li {
+          position: relative;
+          padding: 15px 20px 15px 50px;
+          background: #FFFFFF;
+          border: 1px solid #E0D5C7;
+          border-radius: 8px;
+          font-size: 1.15rem;
+          color: #4A4A4A;
+          transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .payroll-content-card ul li:hover {
+          transform: translateX(5px);
+          box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+          border-color: #D4A574;
+      }
+      .payroll-content-card ul li:before {
+          content: "✔";
+          position: absolute;
+          left: 20px;
+          top: 15px;
+          color: #7FA650;
+          font-weight: bold;
+          font-size: 1.2rem;
+      }
+      /* Steps List */
+      .payroll-content-card ol {
+          counter-reset: custom-counter;
+          list-style: none;
+          padding-left: 0;
+          margin: 2.5rem 0;
+          position: relative;
+      }
+      .payroll-content-card ol::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 19px;
+          width: 2px;
+          background: #E8D4B8;
+      }
+      .payroll-content-card ol li {
+          counter-increment: custom-counter;
+          position: relative;
+          margin-bottom: 30px;
+          padding-left: 60px;
+          font-size: 1.15rem;
+          color: #4A4A4A;
+          line-height: 1.6;
+      }
+      .payroll-content-card ol li::before {
+          content: counter(custom-counter);
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 40px;
+          height: 40px;
+          background-color: #D4A574;
+          color: #fff;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+          font-size: 1.2rem;
+          box-shadow: 0 4px 10px rgba(212, 165, 116, 0.4);
+          z-index: 1;
+      }
+      .payroll-content-card strong {
+          color: #8B7355;
+          font-weight: 600;
+      }
+      @media (max-width: 768px) {
+          .payroll-content-card {
+              padding: 40px 30px;
+          }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div id="all">
+
+        {{ partial "top.html" . }}
+
+        {{ partial "nav.html" . }}
+
+        <!-- Hero Section with Featured Image -->
+        {{ partial "hero.html" . }}
+
+        <div id="content" class="payroll-wrapper">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        
+                        <!-- Page Content -->
+                        <div class="payroll-content-card">
+                            {{ .Content }}
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#content -->
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

@@ -1,0 +1,508 @@
+# English translations for CasaCare website
+
+# Navigation
+[home]
+other = "Home"
+
+[aboutUs]
+other = "About Us"
+
+[ourServices]
+other = "Our Services"
+
+[ourFees]
+other = "Our Fees"
+
+[payroll]
+other = "Payroll"
+
+[contact]
+other = "Contact"
+
+# Common buttons and CTAs
+[getInTouch]
+other = "Get in Touch"
+
+[learnMore]
+other = "Learn More"
+
+[contactUs]
+other = "Contact Us"
+
+[readMore]
+other = "Read More"
+
+[viewDetails]
+other = "View Details"
+
+[getStarted]
+other = "Get Started"
+
+[requestQuote]
+other = "Request a Quote"
+
+[bookConsultation]
+other = "Book a Consultation"
+
+# Section headings
+[whyCasaCare]
+other = "Why CasaCare?"
+
+[meetTheFounder]
+other = "Meet the Founder"
+
+[ourApproach]
+other = "Our Approach"
+
+[whatWeOffer]
+other = "What We Offer"
+
+[pricingPlans]
+other = "Pricing Plans"
+
+[testimonials]
+other = "What Our Clients Say"
+
+[frequentlyAsked]
+other = "Frequently Asked Questions"
+
+# Contact information labels
+[email]
+other = "Email"
+
+[phone]
+other = "Phone"
+
+[address]
+other = "Address"
+
+[followUs]
+other = "Follow Us"
+
+# Form labels
+[name]
+other = "Name"
+
+[yourName]
+other = "Your Name"
+
+[emailAddress]
+other = "Email Address"
+
+[phoneNumber]
+other = "Phone Number"
+
+[subject]
+other = "Subject"
+
+[message]
+other = "Message"
+
+[yourMessage]
+other = "Your Message"
+
+[send]
+other = "Send"
+
+[sendMessage]
+other = "Send Message"
+
+[submit]
+other = "Submit"
+
+# Service-related
+[services]
+other = "Services"
+
+[allServices]
+other = "All Services"
+
+[serviceDetails]
+other = "Service Details"
+
+[included]
+other = "Included"
+
+[notIncluded]
+other = "Not Included"
+
+# Pricing-related
+[perMonth]
+other = "per month"
+
+[perHour]
+other = "per hour"
+
+[oneTime]
+other = "One-time"
+
+[monthly]
+other = "Monthly"
+
+[annually]
+other = "Annually"
+
+[startingAt]
+other = "Starting at"
+
+[from]
+other = "From"
+
+[chooseThisPlan]
+other = "Choose This Plan"
+
+[mostPopular]
+other = "Most Popular"
+
+[recommended]
+other = "Recommended"
+
+# About page
+[ourStory]
+other = "Our Story"
+
+[ourMission]
+other = "Our Mission"
+
+[ourValues]
+other = "Our Values"
+
+[ourTeam]
+other = "Our Team"
+
+# Footer
+[allRightsReserved]
+other = "All rights reserved"
+
+[privacyPolicy]
+other = "Privacy Policy"
+
+[termsOfService]
+other = "Terms of Service"
+
+[cookiePolicy]
+other = "Cookie Policy"
+
+# Time and date
+[monday]
+other = "Monday"
+
+[tuesday]
+other = "Tuesday"
+
+[wednesday]
+other = "Wednesday"
+
+[thursday]
+other = "Thursday"
+
+[friday]
+other = "Friday"
+
+[saturday]
+other = "Saturday"
+
+[sunday]
+other = "Sunday"
+
+# Misc
+[yes]
+other = "Yes"
+
+[no]
+other = "No"
+
+[close]
+other = "Close"
+
+[open]
+other = "Open"
+
+[search]
+other = "Search"
+
+[loading]
+other = "Loading..."
+
+[error]
+other = "Error"
+
+[success]
+other = "Success"
+
+[back]
+other = "Back"
+
+[next]
+other = "Next"
+
+[previous]
+other = "Previous"
+
+[page]
+other = "Page"
+
+[of]
+other = "of"
+
+# CasaCare specific
+[professionalHouseholdManagement]
+other = "Professional Household Management Services"
+
+[basedInSwitzerland]
+other = "Based in Switzerland"
+
+[trustedByFamilies]
+other = "Trusted by Families Across Switzerland"
+
+[yearsOfExperience]
+other = "Years of Experience"
+
+[satisfiedClients]
+other = "Satisfied Clients"
+
+[servicesOffered]
+other = "Services Offered"
+
+# Layout-specific translations
+[why_casacare]
+other = "Why CasaCare?"
+
+[why_casacare_subtitle]
+other = "Your trusted partner for exceptional domestic staff placement"
+
+[dedicated]
+other = "Dedicated"
+
+[dedicated_desc]
+other = "To our clients & candidates"
+
+[international]
+other = "International"
+
+[international_desc]
+other = "Global network, local experts"
+
+[discreet]
+other = "Discreet"
+
+[discreet_desc]
+other = "Ensuring your privacy"
+
+[trusted]
+other = "Trusted"
+
+[trusted_desc]
+other = "Proven experience"
+
+[connected]
+other = "Connected"
+
+[connected_desc]
+other = "Sourcing the best candidates"
+
+[professional]
+other = "Professional"
+
+[professional_desc]
+other = "Excellence in every placement"
+
+# Service pricing translations
+[nanny_services]
+other = "Nanny Services"
+
+[cleaning_services]
+other = "Cleaning Services"
+
+[private_chef]
+other = "Private Chef"
+
+[hourly_rate]
+other = "Hourly Rate"
+
+[daily_rate]
+other = "Daily Rate"
+
+[monthly_package]
+other = "Monthly Package"
+
+[upon_request]
+other = "Upon request"
+
+[background_checks]
+other = "Background checks"
+
+[cpr_certified]
+other = "CPR certified"
+
+[week]
+other = "week"
+
+[vetted_specialists]
+other = "Vetted specialists"
+
+[eco_friendly]
+other = "Eco-friendly products"
+
+[flexible_schedule]
+other = "Flexible schedule"
+
+[session]
+other = "session"
+
+[custom_menus]
+other = "Custom menus"
+
+[michelin_chefs]
+other = "Michelin-star chefs"
+
+[dietary_needs]
+other = "Dietary needs"
+
+[learn_more]
+other = "Learn More"
+
+[our_services]
+other = "Our Services"
+
+[services_subtitle]
+other = "Professional domestic staff tailored to your needs"
+
+# New service descriptions for cards
+[nanny_description]
+other = "Nurturing, experienced nannies who become cherished members of your family."
+
+[cleaning_description]
+other = "Meticulous professionals who maintain your home to perfection."
+
+[chef_description]
+other = "Culinary excellence tailored to your preferences."
+
+[pricing]
+other = "Pricing"
+
+[flexible_arrangements]
+other = "Full-time, part-time, or live-in arrangements"
+
+[temp_corporate]
+other = "Temporary and corporate childcare solutions"
+
+[regular_deep_cleaning]
+other = "Regular maintenance or deep cleaning"
+
+[corporate_cleaning]
+other = "Corporate cleaning solutions"
+
+[diverse_expertise]
+other = "Diverse culinary expertise"
+
+[batch_cooking]
+other = "Batch cooking and meal preparation"
+
+[event_catering]
+other = "Event catering for special occasions"
+
+[custom_packages]
+other = "Custom packages"
+
+# Fee options translations
+[option]
+other = "Option"
+
+[one_time_fee]
+other = "One-time fee"
+
+[monthly_salary]
+other = "Of monthly salary"
+
+[payable_upfront]
+other = "Payable upfront"
+
+[replacement_3months]
+other = "3-month replacement guarantee"
+
+[direct_contract]
+other = "Direct contract"
+
+[quitt_separate]
+other = "Quitt paid separately"
+
+[monthly_fee]
+other = "Monthly fee"
+
+[of_salary]
+other = "Of salary"
+
+[replacements_4x]
+other = "Up to 4 replacements"
+
+[free_service_voucher]
+other = "Free service voucher"
+
+[friend_vouchers]
+other = "3 friend vouchers (50% off)"
+
+[quitt_included]
+other = "Quitt cost included"
+
+[hourly]
+other = "Hourly"
+
+[contracts]
+other = "Contracts"
+
+[min_3hours]
+other = "Minimum 3 hours"
+
+[flexible_scheduling]
+other = "Flexible scheduling"
+
+[replacements_extra]
+other = "Replacements extra cost"
+
+[prices_no_vat]
+other = "Prices do not include VAT. Custom packages available upon request."
+
+[contact_us_today]
+other = "Contact us today to discuss your domestic staff needs"
+
+[ready_to_start]
+other = "Ready to Get Started?"
+
+[need_help_choosing]
+other = "Need Help Choosing?"
+
+[fee_help_text]
+other = "Our team is here to help you select the best fee option for your specific needs and circumstances."
+
+[get_in_touch]
+other = "Get in Touch"
+
+# Highlighted blocks on homepage
+[personalized_advice]
+other = "Personalized Advice"
+
+[highly_qualified_candidates]
+other = "Highly Qualified Candidates"
+
+[reliable_support_every_step]
+other = "Reliable Support at Every Step"
+
+# Navigation
+[navToggle]
+other = "Toggle navigation"
+
+[one_time_match]
+other = "CasaCare One-Time Match"
+
+[membership]
+other = "CasaCare Membership"
+
+[hourly_service]
+other = "CasaCare Hourly Service"
+
+[monthly_salary_20]
+other = "20% of monthly salary"
+
+[hourly_contracts]
+other = "Hourly Contracts"

@@ -1,0 +1,92 @@
+{{/*
+  Custom Hero Section Partial
+  Displays hero banner with background image
+  Usage: {{ partial "hero.html" . }}
+*/}}
+
+{{ $featured_image := .Params.featured_image | default "/images/homepage.jpg" }}
+{{ $title := .Title }}
+{{ $description := .Description }}
+{{ $heroHeight := .Params.hero_height | default "600px" }}
+{{ $bgPosition := .Params.bg_position | default "center" }}
+<section class="hero-section" style="background-image: url('{{ $featured_image }}'); background-size: cover; background-position: {{ $bgPosition }}; position: relative; min-height: {{ $heroHeight }}; display: flex; align-items: center;">
+  
+  <!-- Hero Content (hidden on homepage) -->
+  {{ if not .IsHome }}
+  <div class="container" style="position: relative; z-index: 2;">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1 text-center">
+        
+        <!-- Title -->
+        <h1 class="hero-title" style="color: #FFFFFF; font-size: 48px; font-weight: 700; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+          {{ $title }}
+        </h1>
+        
+        <!-- Description -->
+        {{ if $description }}
+        <p class="hero-description" style="color: #FFFFFF; font-size: 20px; font-weight: 400; margin-bottom: 30px; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
+          {{ $description }}
+        </p>
+        {{ end }}
+        
+      </div>
+    </div>
+  </div>
+  {{ end }}
+  
+{{ if .IsHome }}
+  <!-- Highlighted Blocks Overlay for Homepage -->
+  {{ partial "highlighted_blocks.html" . }}
+{{ end }}
+
+</section>
+
+<!-- Responsive Styles -->
+<style>
+  @media (max-width: 768px) {
+    .hero-section {
+      min-height: calc({{ $heroHeight }} * 0.75) !important;
+    }
+    
+    .hero-title {
+      font-size: 32px !important;
+    }
+    
+    .hero-description {
+      font-size: 16px !important;
+    }
+    
+    .hero-cta .btn {
+      display: block;
+      width: 100%;
+      margin: 10px 0 !important;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-title {
+      font-size: 28px !important;
+    }
+    
+    .hero-description {
+      font-size: 14px !important;
+    }
+  }
+  
+  /* Button Hover Effects */
+  .hero-cta .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+  
+  .hero-cta .btn:first-child:hover {
+    background-color: var(--color-primary-light) !important;
+    color: var(--color-text) !important;
+  }
+  
+  .hero-cta .btn:last-child:hover {
+    background-color: #FFFFFF !important;
+    color: var(--color-primary) !important;
+    border-color: #FFFFFF !important;
+  }
+</style>

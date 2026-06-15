@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  <head>
+    {{ partial "headers.html" . }}
+    {{ partial "custom_headers.html" . }}
+  </head>
+
+  <body>
+
+    <div id="all">
+
+        {{ partial "top.html" . }}
+
+        {{ partial "nav.html" . }}
+
+        <!-- Hero Section with Featured Image -->
+        {{ partial "hero.html" . }}
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        
+                        <!-- Page Content -->
+                        <div class="content-section" style="padding: 80px 0; background: linear-gradient(135deg, #FAF8F5 0%, #FFFFFF 100%); position: relative; overflow: hidden;">
+                            <!-- Decorative Background Elements -->
+                            <div style="position: absolute; top: -150px; left: -100px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(212,165,116,0.08) 0%, rgba(255,255,255,0) 70%); border-radius: 50%; pointer-events: none;"></div>
+                            <div style="position: absolute; bottom: -200px; right: -150px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(139,115,85,0.05) 0%, rgba(255,255,255,0) 70%); border-radius: 50%; pointer-events: none;"></div>
+
+                            <style>
+                                @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+                                .contact-premium-wrapper {
+                                    font-family: 'Inter', sans-serif;
+                                    background: #FFFFFF;
+                                    padding: 70px 80px;
+                                    border-radius: 24px;
+                                    box-shadow: 0 25px 50px -12px rgba(139, 115, 85, 0.15);
+                                    max-width: 950px;
+                                    margin: 0 auto;
+                                    position: relative;
+                                    z-index: 10;
+                                    border: 1px solid rgba(212, 165, 116, 0.2);
+                                }
+                                
+                                /* Typography */
+                                .contact-premium-wrapper h2 {
+                                    color: #8B7355;
+                                    font-family: 'Playfair Display', serif;
+                                    font-size: 2.8rem;
+                                    font-weight: 700;
+                                    text-align: center;
+                                    margin-top: 0;
+                                    margin-bottom: 20px;
+                                    border: none;
+                                }
+
+                                .contact-premium-wrapper h2 + p {
+                                    text-align: center;
+                                    font-size: 1.2rem;
+                                    color: #6B6B6B;
+                                    max-width: 600px;
+                                    margin: 0 auto 50px auto;
+                                    line-height: 1.7;
+                                }
+
+                                .contact-premium-wrapper h3 {
+                                    color: #8B7355;
+                                    font-family: 'Playfair Display', serif;
+                                    font-size: 2rem;
+                                    margin-top: 60px;
+                                    margin-bottom: 20px;
+                                    font-weight: 600;
+                                    text-align: center;
+                                    position: relative;
+                                }
+
+                                .contact-premium-wrapper h3::after {
+                                    content: '';
+                                    display: block;
+                                    width: 60px;
+                                    height: 3px;
+                                    background: #D4A574;
+                                    margin: 15px auto 0;
+                                    border-radius: 2px;
+                                }
+
+                                .contact-premium-wrapper h3 + p {
+                                    text-align: center;
+                                    font-size: 1.15rem;
+                                    color: #6B6B6B;
+                                    max-width: 650px;
+                                    margin: 0 auto;
+                                    line-height: 1.7;
+                                }
+
+                                .contact-premium-wrapper p {
+                                    font-size: 1.15rem;
+                                    color: #6B6B6B;
+                                    line-height: 1.7;
+                                }
+
+                                /* Grid Layout for Contact Items */
+                                .contact-premium-wrapper ul {
+                                    list-style: none !important;
+                                    padding: 0 !important;
+                                    margin: 0 !important;
+                                    display: grid;
+                                    grid-template-columns: repeat(2, 1fr);
+                                    gap: 30px;
+                                }
+
+                                /* Glassmorphic Cards */
+                                .contact-premium-wrapper ul li {
+                                    position: relative;
+                                    background: rgba(250, 248, 245, 0.7);
+                                    backdrop-filter: blur(10px);
+                                    border: 1px solid #F0ECDF;
+                                    border-radius: 20px;
+                                    padding: 40px 30px;
+                                    font-size: 1.1rem;
+                                    color: #555555;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    text-align: center;
+                                    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+                                    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+                                }
+
+                                .contact-premium-wrapper ul li:hover {
+                                    transform: translateY(-8px);
+                                    box-shadow: 0 20px 40px rgba(139, 115, 85, 0.12);
+                                    border-color: #D4A574;
+                                    background: #FFFFFF;
+                                }
+
+                                .contact-premium-wrapper ul li strong {
+                                    color: #8B7355;
+                                    font-family: 'Inter', sans-serif;
+                                    font-size: 1.05rem;
+                                    text-transform: uppercase;
+                                    letter-spacing: 1.5px;
+                                    margin-top: 25px;
+                                    margin-bottom: 12px;
+                                    display: block;
+                                    font-weight: 600;
+                                }
+
+                                /* Gradient Circular Icons */
+                                .contact-premium-wrapper ul li::before {
+                                    display: flex !important;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 72px;
+                                    height: 72px;
+                                    background: linear-gradient(135deg, #D4A574 0%, #8B7355 100%);
+                                    border-radius: 50%;
+                                    color: #FFFFFF;
+                                    font-family: FontAwesome;
+                                    font-size: 1.8rem;
+                                    margin-bottom: 5px;
+                                    box-shadow: 0 10px 20px rgba(212, 165, 116, 0.3);
+                                    transition: transform 0.3s ease;
+                                }
+
+                                .contact-premium-wrapper ul li:hover::before {
+                                    transform: scale(1.1) rotate(5deg);
+                                }
+
+                                .contact-premium-wrapper ul li:nth-child(1)::before { content: "\f0e0"; }
+                                .contact-premium-wrapper ul li:nth-child(2)::before { content: "\f095"; }
+                                .contact-premium-wrapper ul li:nth-child(3)::before { content: "\f041"; }
+                                .contact-premium-wrapper ul li:nth-child(4)::before { content: "\f017"; }
+
+                                /* Removing extra margin from text generated by markdown inside li */
+                                .contact-premium-wrapper ul li p {
+                                    margin: 0;
+                                    color: inherit;
+                                    font-size: inherit;
+                                }
+
+                                /* Responsive adjustments */
+                                @media (max-width: 768px) {
+                                    .contact-premium-wrapper {
+                                        padding: 40px 30px;
+                                    }
+                                    .contact-premium-wrapper h2 {
+                                        font-size: 2.2rem;
+                                    }
+                                    .contact-premium-wrapper ul {
+                                        grid-template-columns: 1fr;
+                                        gap: 20px;
+                                    }
+                                    .contact-premium-wrapper ul li {
+                                        padding: 30px 20px;
+                                    }
+                                }
+                            </style>
+                            <div class="contact-premium-wrapper">
+                                {{ .Content }}
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /#content -->
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

@@ -1,0 +1,74 @@
+# Netlify configuration for Hugo site
+# https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  # Build command
+  command = "hugo --minify"
+  
+  # Directory to publish (Hugo's default output directory)
+  publish = "public"
+
+[build.environment]
+  # Hugo version - using extended version for SCSS/SASS support
+  HUGO_VERSION = "0.121.0"
+  HUGO_ENV = "production"
+  HUGO_ENABLEGITINFO = "false"
+
+[context.production.environment]
+  HUGO_ENV = "production"
+
+[context.deploy-preview.environment]
+  HUGO_ENV = "staging"
+
+[context.branch-deploy.environment]
+  HUGO_ENV = "staging"
+
+# Redirect rules
+[[redirects]]
+  # Redirect root to default language (English)
+  from = "/"
+  to = "/en/"
+  status = 302
+  force = false
+
+[[redirects]]
+  # Redirect /index.html to /en/
+  from = "/index.html"
+  to = "/en/"
+  status = 301
+
+# Headers for security and performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Custom 404 page
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404

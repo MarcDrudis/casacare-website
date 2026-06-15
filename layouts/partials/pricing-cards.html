@@ -1,0 +1,148 @@
+{{/* 
+  Pricing Cards Partial
+  Usage: {{ partial "pricing-cards.html" (dict "context" . "type" "services") }}
+  Types: "services" or "fees"
+*/}}
+
+{{ $type := .type | default "services" }}
+{{ $context := .context }}
+
+<section class="bar background-white pricing-section">
+  <div class="container">
+    
+    {{ if eq $type "services" }}
+    <!-- Service Pricing Cards -->
+    <div class="row">
+      <!-- Nanny Services Card -->
+      <div class="col-md-4">
+        <div class="pricing-card">
+          <div class="price-header">
+            <div class="icon">
+              <i class="fa fa-child fa-3x" style="color: var(--color-primary);"></i>
+            </div>
+            <h3 class="price-title">{{ i18n "nanny_services" | default "Nanny Services" }}</h3>
+          </div>
+          <ul class="price-features">
+            <li><i class="fa fa-check"></i> <strong>{{ i18n "hourly_rate" | default "Hourly Rate" }}:</strong> 25-30 CHF</li>
+            <li><i class="fa fa-check"></i> <strong>{{ i18n "daily_rate" | default "Daily Rate" }}:</strong> 75-90 CHF</li>
+            <li><i class="fa fa-check"></i> <strong>{{ i18n "monthly_package" | default "Monthly Package" }}:</strong> {{ i18n "upon_request" | default "Upon request" }}</li>
+            <li><i class="fa fa-check"></i> {{ i18n "background_checks" | default "Background checks" }}</li>
+            <li><i class="fa fa-check"></i> {{ i18n "cpr_certified" | default "CPR certified" }}</li>
+          </ul>
+          <a href="{{ relLangURL "services" }}" class="btn btn-primary">{{ i18n "learn_more" | default "Learn More" }}</a>
+        </div>
+      </div>
+
+      <!-- Cleaning Services Card -->
+      <div class="col-md-4">
+        <div class="pricing-card featured">
+          <div class="price-header">
+            <div class="icon">
+              <i class="fa fa-home fa-3x" style="color: var(--color-primary);"></i>
+            </div>
+            <h3 class="price-title">{{ i18n "cleaning_services" | default "Cleaning Services" }}</h3>
+          </div>
+          <ul class="price-features">
+            <li><i class="fa fa-check"></i> <strong>{{ i18n "hourly_rate" | default "Hourly Rate" }}:</strong> 30 CHF</li>
+            <li><i class="fa fa-check"></i> <strong>3h/{{ i18n "week" | default "week" }}:</strong> 90 CHF</li>
+            <li><i class="fa fa-check"></i> {{ i18n "vetted_specialists" | default "Vetted specialists" }}</li>
+            <li><i class="fa fa-check"></i> {{ i18n "eco_friendly" | default "Eco-friendly products" }}</li>
+            <li><i class="fa fa-check"></i> {{ i18n "flexible_schedule" | default "Flexible schedule" }}</li>
+          </ul>
+          <a href="{{ relLangURL "services" }}" class="btn btn-primary">{{ i18n "learn_more" | default "Learn More" }}</a>
+        </div>
+      </div>
+
+      <!-- Private Chef Card -->
+      <div class="col-md-4">
+        <div class="pricing-card">
+          <div class="price-header">
+            <div class="icon">
+              <i class="fa fa-cutlery fa-3x" style="color: var(--color-primary);"></i>
+            </div>
+            <h3 class="price-title">{{ i18n "private_chef" | default "Private Chef" }}</h3>
+          </div>
+          <ul class="price-features">
+            <li><i class="fa fa-check"></i> <strong>{{ i18n "from" | default "From" }}:</strong> 45 CHF/h</li>
+            <li><i class="fa fa-check"></i> <strong>3h {{ i18n "session" | default "session" }}:</strong> {{ i18n "from" | default "From" }} 135 CHF</li>
+            <li><i class="fa fa-check"></i> {{ i18n "custom_menus" | default "Custom menus" }}</li>
+            <li><i class="fa fa-check"></i> {{ i18n "michelin_chefs" | default "Michelin-star chefs" }}</li>
+            <li><i class="fa fa-check"></i> {{ i18n "dietary_needs" | default "Dietary needs" }}</li>
+          </ul>
+          <a href="{{ relLangURL "services" }}" class="btn btn-primary">{{ i18n "learn_more" | default "Learn More" }}</a>
+        </div>
+      </div>
+    </div>
+
+    {{ else if eq $type "fees" }}
+    <!-- Fee Options Cards -->
+    <div class="row">
+      <!-- Option 1 -->
+      <div class="col-md-4">
+        <div class="pricing-card">
+          <div class="price-header">
+            <h3 class="price-title">{{ i18n "one_time_match" | default "CasaCare One-Time Match" }}</h3>
+            <div class="price-amount" style="font-size: 2.2rem; line-height: 1.2; padding: 15px 0;">{{ i18n "one_time_fee" | default "One-time fee" }}</div>
+            <div class="price-period"></div>
+          </div>
+          <ul class="price-features">
+            <li><i class="fa fa-check"></i> {{ i18n "monthly_salary" | default "100% of monthly salary" }}</li>
+            <li><i class="fa fa-check"></i> {{ i18n "payable_upfront" | default "Payable upfront" }}</li>
+            <li><i class="fa fa-check"></i> {{ i18n "replacement_3months" | default "3-month replacement guarantee" }}</li>
+            <li><i class="fa fa-check"></i> {{ i18n "direct_contract" | default "Direct contract" }}</li>
+            <li><i class="fa fa-info-circle"></i> {{ i18n "quitt_separate" | default "Quitt paid separately" }}</li>
+          </ul>
+          <a href="{{ relLangURL "contact" }}" class="btn btn-primary">{{ i18n "contact_us" | default "Contact Us" }}</a>
+        </div>
+      </div>
+
+      <!-- Option 2 - Featured -->
+      <div class="col-md-4">
+        <div class="pricing-card featured">
+          <div class="price-header">
+            <h3 class="price-title">{{ i18n "membership" | default "CasaCare Membership" }}</h3>
+            <div class="price-amount" style="font-size: 2.2rem; line-height: 1.2; padding: 15px 0;">{{ i18n "monthly_fee" | default "Monthly fee" }}</div>
+            <div class="price-period"></div>
+          </div>
+          <ul class="price-features">
+            <li><i class="fa fa-check"></i> {{ i18n "monthly_salary_20" | default "20% of monthly salary" }}</li>
+            <li><i class="fa fa-check"></i> {{ i18n "payable_upfront" | default "Payable upfront" }}</li>
+            <li><i class="fa fa-check"></i> {{ i18n "replacements_4x" | default "Up to 4 replacements" }}</li>
+            <li><i class="fa fa-check"></i> {{ i18n "free_service_voucher" | default "Free service voucher" }}</li>
+            <li><i class="fa fa-check"></i> {{ i18n "friend_vouchers" | default "3 friend vouchers (50% off)" }}</li>
+            <li><i class="fa fa-check"></i> {{ i18n "quitt_included" | default "Quitt cost included" }}</li>
+          </ul>
+          <a href="{{ relLangURL "contact" }}" class="btn btn-primary">{{ i18n "contact_us" | default "Contact Us" }}</a>
+        </div>
+      </div>
+
+      <!-- Option 3 -->
+      <div class="col-md-4">
+        <div class="pricing-card">
+          <div class="price-header">
+            <h3 class="price-title">{{ i18n "hourly_service" | default "CasaCare Hourly Service" }}</h3>
+            <div class="price-amount" style="font-size: 2.2rem; line-height: 1.2; padding: 15px 0;">{{ i18n "hourly_contracts" | default "Hourly Contracts" }}</div>
+            <div class="price-period"></div>
+          </div>
+          <ul class="price-features">
+            <li><i class="fa fa-check"></i> {{ i18n "payable_upfront" | default "Payable upfront" }}</li>
+            <li><i class="fa fa-check"></i> {{ i18n "min_3hours" | default "Minimum 3 hours" }}</li>
+            <li><i class="fa fa-check"></i> {{ i18n "flexible_scheduling" | default "Flexible scheduling" }}</li>
+            <li><i class="fa fa-info-circle"></i> {{ i18n "replacements_extra" | default "Replacements extra cost" }}</li>
+            <li><i class="fa fa-info-circle"></i> {{ i18n "quitt_separate" | default "Quitt paid separately" }}</li>
+          </ul>
+          <a href="{{ relLangURL "contact" }}" class="btn btn-primary">{{ i18n "contact_us" | default "Contact Us" }}</a>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+
+    <!-- Pricing Note -->
+    <div class="row">
+      <div class="col-md-12 text-center" style="margin-top: 30px;">
+        <p class="text-muted"><em>{{ i18n "prices_no_vat" | default "Prices do not include VAT. Custom packages available upon request." }}</em></p>
+      </div>
+    </div>
+
+  </div>
+</section>

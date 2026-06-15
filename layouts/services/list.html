@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  <head>
+    {{ partial "headers.html" . }}
+    {{ partial "custom_headers.html" . }}
+  </head>
+
+  <body>
+
+    <div id="all">
+
+        {{ partial "top.html" . }}
+
+        {{ partial "nav.html" . }}
+
+        <!-- Hero Section with Featured Image -->
+        {{ partial "hero.html" . }}
+
+        <div id="content" class="services-wrapper">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        
+                        <!-- Page Content -->
+                        <div class="services-content">
+                            {{ .Content }}
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Call To Action Bottom Section -->
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="cta-section text-center">
+                            <h3 style="margin-bottom: 20px; border:none; text-transform:none;">{{ i18n "ready_to_start" | default "Ready to Get Started?" }}</h3>
+                            <p style="margin-bottom: 30px;">{{ i18n "contact_us_today" | default "Contact us today to discuss your domestic staff needs and receive a tailored proposal." }}</p>
+                            <a href="{{ relLangURL "contact" }}" class="btn btn-primary btn-lg">{{ i18n "contact_us" | default "Contact Us" }}</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.container -->
+
+        </div>
+        <!-- /#content -->
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  <head>
+    {{ partial "headers.html" . }}
+    {{ partial "custom_headers.html" . }}
+  </head>
+
+  <body>
+
+    <div id="all">
+
+        {{ partial "top.html" . }}
+
+        {{ partial "nav.html" . }}
+
+        <!-- Hero Section with Featured Image -->
+        {{ partial "hero.html" . }}
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        
+                        <!-- Page Content -->
+                        <div class="content-section" style="padding: 40px 0;">
+                            {{ .Content }}
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.container -->
+
+            <!-- Fee Options Pricing Cards -->
+            {{ partial "pricing-cards.html" (dict "context" . "type" "fees") }}
+
+            <!-- Additional Information Section -->
+            <div class="container" style="padding: 40px 0;">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="box-simple" style="background-color: var(--color-primary-light); border: none; text-align: center;">
+                            <h3 style="color: var(--color-text); margin-bottom: 20px;">{{ i18n "need_help_choosing" | default "Need Help Choosing?" }}</h3>
+                            <p style="color: var(--color-text-light); margin-bottom: 25px;">{{ i18n "fee_help_text" | default "Our team is here to help you select the best fee option for your specific needs and circumstances." }}</p>
+                            <a href="{{ relLangURL "contact" }}" class="btn btn-primary btn-lg">{{ i18n "get_in_touch" | default "Get in Touch" }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /#content -->
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

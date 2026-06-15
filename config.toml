@@ -1,0 +1,174 @@
+baseURL = "https://casacare.ch/"
+title = "CasaCare - Professional Household Management Services"
+theme = "hugo-universal-theme"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 10
+
+# Multilingual configuration
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en"
+    weight = 1
+    contentDir = "content/en"
+    title = "CasaCare - Professional Household Management Services"
+    [languages.en.params]
+      locale = "en-US"
+  
+  [languages.ca]
+    languageName = "Català"
+    languageCode = "ca"
+    weight = 2
+    contentDir = "content/ca"
+    title = "CasaCare - Serveis Professionals de Gestió de la Llar"
+    [languages.ca.params]
+      locale = "ca-ES"
+
+# Site parameters
+[params]
+  viewMorePostLink = "/blog/"
+  author = "CasaCare"
+  defaultKeywords = ["household management", "domestic services", "payroll", "Switzerland"]
+  mainSections = ["services", "about", "fees", "payroll", "contact"]
+  defaultDescription = "Professional household management services in Switzerland"
+
+  # Contact information
+  email = "casacare.contact@gmail.com"
+  phone = "+41782094496"
+  address = "Rainstrasse 15a, 8134, Adlsiwil"
+  office_hours = "Monday to Friday, 9:00–18:00"
+  contact_url = "/contact/"
+  
+  # Social media (optional - can be added later)
+  facebook = ""
+  twitter = ""
+  instagram = ""
+  linkedin = ""
+
+  # Warm beige color scheme
+  [params.style]
+    defaultColor = "beige"
+  
+  # Color parameters for warm beige theme
+  [params.colors]
+    primary = "#D4A574"        # Warm beige/tan
+    primary_dark = "#B8935F"   # Darker beige
+    primary_light = "#E8D4B8"  # Light beige
+    secondary = "#8B7355"      # Brown accent
+    text = "#4A4A4A"           # Dark gray text
+    text_light = "#6B6B6B"     # Medium gray text
+    background = "#FAF8F5"     # Off-white background
+    background_alt = "#F5F1EB" # Alternate background
+    border = "#E0D5C7"         # Border color
+    white = "#FFFFFF"
+    success = "#7FA650"        # Muted green
+    info = "#6B9AC4"           # Muted blue
+    warning = "#D4A574"        # Same as primary
+    danger = "#C17B6B"         # Muted red
+
+  # Logo and branding
+  logo = "images/Logo.jpg"
+  logo_small = "images/Logo.jpg"
+  logo_text = "CasaCare"
+  
+  # Features
+  [params.CarouselHomepage]
+    enable = false
+    auto_play = false
+    slide_speed = 2000
+    pagination_speed = 1000
+  
+  [params.features]
+    enable = false
+    cols = 3
+  
+  [params.testimonials]
+    enable = false
+  
+  [params.see_more]
+    enable = false
+  
+  [params.clients]
+    enable = false
+  
+  [params.recent_posts]
+    enable = false
+
+  [params.footer]
+    [params.footer.recent_posts]
+      enable = false
+
+  # Top bar
+  [params.topbar]
+    enable = true
+    text = ""
+
+  # Google Maps (optional)
+  [params.map]
+    enable = false
+
+# Menu configuration - English
+[[languages.en.menu.main]]
+  name = "Home"
+  url = "/en/"
+  weight = 1
+
+[[languages.en.menu.main]]
+  name = "About Us"
+  url = "/en/about/"
+  weight = 2
+
+[[languages.en.menu.main]]
+  name = "Our Services"
+  url = "/en/services/"
+  weight = 3
+
+[[languages.en.menu.main]]
+  name = "Our Fees"
+  url = "/en/fees/"
+  weight = 4
+
+[[languages.en.menu.main]]
+  name = "Payroll"
+  url = "/en/payroll/"
+  weight = 5
+
+[[languages.en.menu.main]]
+  name = "Contact"
+  url = "/en/contact/"
+  weight = 6
+
+# Menu configuration - Catalan
+[[languages.ca.menu.main]]
+  name = "Inici"
+  url = "/ca/"
+  weight = 1
+
+[[languages.ca.menu.main]]
+  name = "Sobre Nosaltres"
+  url = "/ca/about/"
+  weight = 2
+
+[[languages.ca.menu.main]]
+  name = "Els Nostres Serveis"
+  url = "/ca/services/"
+  weight = 3
+
+[[languages.ca.menu.main]]
+  name = "Les Nostres Tarifes"
+  url = "/ca/fees/"
+  weight = 4
+
+[[languages.ca.menu.main]]
+  name = "Nòmina"
+  url = "/ca/payroll/"
+  weight = 5
+
+[[languages.ca.menu.main]]
+  name = "Contacte"
+  url = "/ca/contact/"
+  weight = 6

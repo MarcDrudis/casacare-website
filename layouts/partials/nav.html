@@ -1,0 +1,348 @@
+<header class="navbar-affixed-top" data-spy="affix" data-offset-top="62">
+    <div class="navbar navbar-default yamm {{ if .Site.Params.dropdown_mouse_over }}mouseover{{ end }}" role="navigation" id="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="{{ "/" | relLangURL }}" style="display: flex; align-items: center; text-decoration: none;">
+                    <span style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 28px; color: #8B7355; letter-spacing: 1px; margin-top: 5px;">CasaCare</span>
+                    <span class="sr-only">CasaCare - Home</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                      <span class="sr-only">{{ i18n "navToggle" }}</span>
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            <!--/.navbar-header -->
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  {{ $current := . }}
+
+                  {{ range .Site.Menus.main.ByWeight }}
+                  {{ $topLevel := replace .URL "/" "" }}
+                  {{ $active := "" }}
+
+                  {{ if eq $current.RelPermalink .URL }}
+                    {{ $active = "active" }}
+                  {{ end }}
+
+                  {{ if eq $current.Type $topLevel }}
+                    {{ $active = "active" }}
+                  {{ end }}
+
+                  {{ if and (or (eq $current.RelPermalink .URL) (eq "term" $current.Kind)) (in (slice "page" "term") $current.Kind) }}
+                    {{ range (split .URL "/") }}
+                      {{ if eq "blog" . }}
+                        {{ $active = "active" }}
+                      {{ end }}
+                    {{ end }}
+                  {{ end }}
+
+                  {{ if .HasChildren }}
+                    <!-- Check if the first child marks a menu section identifier -->
+                    {{ $hasSections := (hasPrefix (index .Children 0).Identifier "section.") }}
+                    <li class="dropdown{{ if $hasSections }} use-yamm yamm-fw{{end}} {{ $active }}">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ .Name }} <span class="caret"></span></a>
+                        {{ if $hasSections }}
+                        <ul class="dropdown-menu">
+                            <li>
+                            <div class="yamm-content">
+                            <div class="row">
+                                {{ if ne .URL "" }}
+                                <div class="col-sm-6">
+                                    <img src="{{ .URL }}" class="img-responsive hidden-xs"/>
+                                </div>
+                                {{ end }}
+                                <div class="col-sm-3">
+                                {{ range .Children.ByWeight }}
+                                    {{ $column := printf "%s" .Post }}
+                                    {{ if eq $column "1" }}
+                                    <h5>{{ .Name }}</h5>
+                                    {{ if .HasChildren }}
+                                    <ul>
+                                    {{ range .Children.ByWeight }}
+                                    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                                    {{- end }}
+                                    </ul>
+                                    {{ end }}
+                                    {{ end }}
+                                {{ end }}
+                                </div>
+                                <div class="col-sm-3">
+                                {{ range .Children.ByWeight }}
+                                    {{ $column := printf "%s" .Post }}
+                                    {{ if eq $column "2" }}
+                                    <h5>{{ .Name }}</code></h5>
+                                    {{ if .HasChildren }}
+                                    <ul>
+                                    {{ range .Children.ByWeight }}
+                                    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                                    {{ end }}
+                                    </ul>
+                                    {{ end }}
+                                    {{ end }}
+                                {{ end }}
+                                </div>
+                                {{ if eq .URL "" }}
+                                <div class="col-sm-3">
+                                {{ range .Children }}
+                                    {{ $column := printf "%s" .Post }}
+                                    {{ if eq $column "3" }}
+                                    <h5>{{ .Name }}</code></h5>
+                                    {{ if .HasChildren }}
+                                    <ul>
+                                    {{ range .Children.ByWeight }}
+                                    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                                    {{ end }}
+                                    </ul>
+                                    {{ end }}
+                                    {{ end }}
+                                {{ end }}
+                                </div>
+                                <div class="col-sm-3">
+                                {{ range .Children }}
+                                    {{ $column := printf "%s" .Post }}
+                                    {{ if eq $column "4" }}
+                                    <h5>{{ .Name }}</code></h5>
+                                    {{ if .HasChildren }}
+                                    <ul>
+                                    {{ range .Children.ByWeight }}
+                                    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                                    {{ end }}
+                                    </ul>
+                                    {{ end }}
+                                    {{ end }}
+                                {{ end }}
+                                </div>
+                                {{ end }}
+                            </div>
+                            </div>
+                            </li>
+                        </ul>
+                        {{ else }}
+                        <ul class="dropdown-menu">
+                            {{ range .Children.ByWeight }}
+                            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                            {{ end }}
+                        </ul>
+                        {{ end }}
+                    </li>
+                  {{ else }}
+                  <li class="dropdown {{ $active }}">
+                    <a href="{{ .URL }}">{{ .Name }}</a>
+                  </li>
+                  {{ end }}
+                  {{ end }}
+                  
+                  <!-- Language Selector in Navigation -->
+                  <li class="dropdown language-selector-nav">
+                    <a href="#" class="language-toggle-nav" role="button" aria-haspopup="true" aria-expanded="false" style="display: flex; align-items: center; color: #8B7355; transition: all 0.3s ease; text-decoration: none;">
+                        <i class="fas fa-globe" style="font-size: 16px; margin-right: 6px;"></i>
+                        <span style="font-size: 13px; font-weight: 500; text-transform: uppercase;">{{ .Site.LanguageCode | upper }}</span>
+                        <i class="fas fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i>
+                    </a>
+                  </li>
+                  
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+
+            <div class="collapse clearfix" id="search">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fas fa-search"></i></button>
+                </span>
+                    </div>
+                </form>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</header>
+
+<!-- *** NAVBAR END ***-->
+
+</div>
+
+<!-- Language Selector Styles -->
+<style>
+    .language-selector-nav .language-toggle-nav:hover {
+        color: #6b5d4f !important;
+        transform: translateY(-1px);
+        background: none !important;
+    }
+    
+    .language-dropdown-nav {
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+        top: auto;
+        right: auto;
+        left: auto;
+        min-width: 160px;
+        border: 1px solid #e8dfd6;
+        border-radius: 8px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        background: #ffffff;
+        margin-top: 8px;
+        z-index: 99999;
+        transition: all 0.3s ease;
+        transform: translateY(-10px);
+        max-height: none;
+        overflow: visible;
+    }
+    
+    .language-selector-nav.open .language-dropdown-nav {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .language-dropdown-nav li {
+        margin: 0;
+    }
+    
+    .language-dropdown-nav li a {
+        display: block;
+        text-decoration: none;
+        border-bottom: 1px solid #f5f5f5;
+        transition: all 0.2s ease;
+        color: #3a3a3a !important;
+    }
+    
+    .language-dropdown-nav li:last-child a {
+        border-bottom: none;
+    }
+    
+    .language-dropdown-nav li a:hover {
+        background-color: #f8f6f3;
+        color: #8B7355 !important;
+        transform: translateX(3px);
+    }
+    
+    .language-dropdown-nav li a:hover span {
+        transform: scale(1.1);
+        transition: transform 0.2s ease;
+    }
+    
+    /* Mobile styles */
+    @media (max-width: 768px) {
+        .language-selector-nav .language-toggle-nav {
+            padding: 10px 15px !important;
+        }
+        
+        .language-selector-nav .language-toggle-nav i:first-child {
+            font-size: 14px !important;
+        }
+        
+        .language-selector-nav .language-toggle-nav span {
+            font-size: 11px !important;
+        }
+        
+        .language-dropdown-nav {
+            min-width: 140px !important;
+        }
+        
+        .language-dropdown-nav li a {
+            font-size: 13px !important;
+            padding: 8px 12px !important;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .language-selector-nav .language-toggle-nav span {
+            display: none; /* Hide language code on very small screens */
+        }
+        
+        .language-selector-nav .language-toggle-nav i:first-child {
+            margin-right: 0 !important;
+        }
+    }
+</style>
+
+<!-- Language Selector JavaScript -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const languageToggleNav = document.querySelector('.language-toggle-nav');
+    const languageSelectorNav = document.querySelector('.language-selector-nav');
+    const languageDropdownMenu = document.getElementById('language-dropdown-menu');
+    
+    if (languageToggleNav && languageDropdownMenu) {
+        // Prevent Bootstrap default behavior and use our own
+        languageToggleNav.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // Close dropdown if already open
+            if (languageDropdownMenu.style.visibility === 'visible') {
+                languageDropdownMenu.style.visibility = 'hidden';
+                languageDropdownMenu.style.opacity = '0';
+                languageDropdownMenu.style.transform = 'translateY(-10px)';
+                return false;
+            }
+            
+            // Calculate position for fixed dropdown
+            const toggleRect = languageToggleNav.getBoundingClientRect();
+            const dropdownWidth = 160;
+            
+            // Position dropdown below the toggle with highest priority
+            languageDropdownMenu.style.top = (toggleRect.bottom + window.scrollY + 8) + 'px';
+            languageDropdownMenu.style.left = (toggleRect.right - dropdownWidth + window.scrollX) + 'px';
+            languageDropdownMenu.style.width = dropdownWidth + 'px';
+            languageDropdownMenu.style.visibility = 'visible';
+            languageDropdownMenu.style.opacity = '1';
+            languageDropdownMenu.style.transform = 'translateY(0)';
+            
+            return false;
+        });
+        
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!languageToggleNav.contains(e.target) && !languageDropdownMenu.contains(e.target)) {
+                languageDropdownMenu.style.visibility = 'hidden';
+                languageDropdownMenu.style.opacity = '0';
+                languageDropdownMenu.style.transform = 'translateY(-10px)';
+            }
+        });
+        
+        // Close dropdown when clicking on a language link
+        languageDropdownMenu.querySelectorAll('a').forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                // Allow the link to work normally
+                setTimeout(function() {
+                    languageDropdownMenu.style.visibility = 'hidden';
+                    languageDropdownMenu.style.opacity = '0';
+                    languageDropdownMenu.style.transform = 'translateY(-10px)';
+                }, 100);
+            });
+        });
+        
+        // Recalculate position on window resize
+        window.addEventListener('resize', function() {
+            if (languageDropdownMenu.style.visibility === 'visible') {
+                const toggleRect = languageToggleNav.getBoundingClientRect();
+                const dropdownWidth = 160;
+                
+                languageDropdownMenu.style.top = (toggleRect.bottom + window.scrollY + 8) + 'px';
+                languageDropdownMenu.style.left = (toggleRect.right - dropdownWidth + window.scrollX) + 'px';
+            }
+        });
+    }
+});
+</script>
+
+<!-- Language Dropdown Menu - Body Level -->
+<ul id="language-dropdown-menu" class="language-dropdown-nav" style="visibility: hidden; opacity: 0; position: fixed; top: 0; left: 0; min-width: 160px; border: 1px solid #e8dfd6; border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.15); background: #ffffff; z-index: 999999; transition: all 0.3s ease; transform: translateY(-10px); max-height: none; overflow: visible; list-style: none; padding: 0; margin: 0;">
+    {{ range site.Languages }}
+    {{ if and (ne $.Language.Lang .Lang) (or (eq .Lang "en") (eq .Lang "ca")) }}
+    <li style="margin: 0;"><a href="/{{ .Lang }}/" style="padding: 10px 16px; color: #3a3a3a; font-size: 14px; font-family: 'Inter', sans-serif; transition: all 0.2s ease; display: flex; align-items: center; text-decoration: none;">
+        <span style="margin-right: 8px; font-weight: 500;">{{ upper .Lang }}</span> {{ .LanguageName }}
+    </a></li>
+    {{ end }}
+    {{ end }}
+</ul>
+
+</div>

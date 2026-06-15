@@ -1,0 +1,465 @@
+# Catalan translations for CasaCare website
+
+# Navigation
+[home]
+other = "Inici"
+
+[aboutUs]
+other = "Sobre Nosaltres"
+
+[ourServices]
+other = "Els Nostres Serveis"
+
+[ourFees]
+other = "Les Nostres Tarifes"
+
+[payroll]
+other = "Nòmina"
+
+[contact]
+other = "Contacte"
+
+# Common buttons and CTAs
+[getInTouch]
+other = "Poseu-vos en Contacte"
+
+[learnMore]
+other = "Més Informació"
+
+[contactUs]
+other = "Contacteu-nos"
+
+[readMore]
+other = "Llegir Més"
+
+[viewDetails]
+other = "Veure Detalls"
+
+[getStarted]
+other = "Començar"
+
+[requestQuote]
+other = "Sol·licitar Pressupost"
+
+[bookConsultation]
+other = "Reservar Consulta"
+
+# Section headings
+[whyCasaCare]
+other = "Per Què CasaCare?"
+
+[meetTheFounder]
+other = "Coneixeu el Fundador"
+
+[ourApproach]
+other = "El Nostre Enfocament"
+
+[whatWeOffer]
+other = "El Que Oferim"
+
+[pricingPlans]
+other = "Plans de Preus"
+
+[testimonials]
+other = "El Que Diuen Els Nostres Clients"
+
+[frequentlyAsked]
+other = "Preguntes Freqüents"
+
+# Contact information labels
+[email]
+other = "Correu Electrònic"
+
+[phone]
+other = "Telèfon"
+
+[address]
+other = "Adreça"
+
+[followUs]
+other = "Segueix-nos"
+
+# Form labels
+[name]
+other = "Nom"
+
+[yourName]
+other = "El Vostre Nom"
+
+[emailAddress]
+other = "Adreça de Correu"
+
+[phoneNumber]
+other = "Número de Telèfon"
+
+[subject]
+other = "Assumpte"
+
+[message]
+other = "Missatge"
+
+[yourMessage]
+other = "El Vostre Missatge"
+
+[send]
+other = "Enviar"
+
+[sendMessage]
+other = "Enviar Missatge"
+
+[submit]
+other = "Enviar"
+
+# Service-related
+[services]
+other = "Serveis"
+
+[allServices]
+other = "Tots els Serveis"
+
+[serviceDetails]
+other = "Detalls del Servei"
+
+[included]
+other = "Inclòs"
+
+[notIncluded]
+other = "No Inclòs"
+
+# Pricing-related
+[perMonth]
+other = "per mes"
+
+[perHour]
+other = "per hora"
+
+[oneTime]
+other = "Una vegada"
+
+[monthly]
+other = "Mensual"
+
+[annually]
+other = "Anual"
+
+[startingAt]
+other = "Des de"
+
+[from]
+other = "Des de"
+
+[chooseThisPlan]
+other = "Triar Aquest Pla"
+
+[mostPopular]
+other = "Més Popular"
+
+[recommended]
+other = "Recomanat"
+
+# About page
+[ourStory]
+other = "La Nostra Història"
+
+[ourMission]
+other = "La Nostra Missió"
+
+[ourValues]
+other = "Els Nostres Valors"
+
+[ourTeam]
+other = "El Nostre Equip"
+
+# Footer
+[allRightsReserved]
+other = "Tots els drets reservats"
+
+[privacyPolicy]
+other = "Política de Privacitat"
+
+[termsOfService]
+other = "Termes de Servei"
+
+[cookiePolicy]
+other = "Política de Cookies"
+
+# Time and date
+[monday]
+other = "Dilluns"
+
+[tuesday]
+other = "Dimarts"
+
+[wednesday]
+other = "Dimecres"
+
+[thursday]
+other = "Dijous"
+
+[friday]
+other = "Divendres"
+
+[saturday]
+other = "Dissabte"
+
+[sunday]
+other = "Diumenge"
+
+# Misc
+[yes]
+other = "Sí"
+
+[no]
+other = "No"
+
+[close]
+other = "Tancar"
+
+[open]
+other = "Obrir"
+
+[search]
+other = "Cercar"
+
+[loading]
+other = "Carregant..."
+
+[error]
+other = "Error"
+
+[success]
+other = "Èxit"
+
+[back]
+other = "Enrere"
+
+[next]
+other = "Següent"
+
+[previous]
+other = "Anterior"
+
+[page]
+other = "Pàgina"
+
+[of]
+other = "de"
+
+# CasaCare specific
+[professionalHouseholdManagement]
+other = "Serveis Professionals de Gestió de la Llar"
+
+[basedInSwitzerland]
+other = "Amb Seu a Suïssa"
+
+[trustedByFamilies]
+other = "Confiat per Famílies a Tota Suïssa"
+
+[yearsOfExperience]
+other = "Anys d'Experiència"
+
+[satisfiedClients]
+other = "Clients Satisfets"
+
+[servicesOffered]
+other = "Serveis Oferts"
+
+# Service pricing translations
+[nanny_services]
+other = "Serveis de Mainadera"
+
+[cleaning_services]
+other = "Serveis de Neteja"
+
+[private_chef]
+other = "Xef Privat"
+
+[hourly_rate]
+other = "Tarifa per hora"
+
+[daily_rate]
+other = "Tarifa diària"
+
+[monthly_package]
+other = "Paquet mensual"
+
+[upon_request]
+other = "Sota consulta"
+
+[background_checks]
+other = "Verificació d'antecedents"
+
+[cpr_certified]
+other = "Certificació en RCP i primers auxilis"
+
+[week]
+other = "setmana"
+
+[vetted_specialists]
+other = "Especialistes verificats"
+
+[eco_friendly]
+other = "Productes ecològics"
+
+[session]
+other = "sessió"
+
+[custom_menus]
+other = "Menús personalitzats"
+
+[michelin_chefs]
+other = "Xefs amb estrelles Michelin"
+
+[dietary_needs]
+other = "Necessitats dietètiques"
+
+[learn_more]
+other = "Més Informació"
+
+[our_services]
+other = "Els Nostres Serveis"
+
+[services_subtitle]
+other = "Serveis professionals de personal domèstic adaptats a les vostres necessitats"
+
+# New service descriptions for cards
+[nanny_description]
+other = "Mainaderes afectuoses i experimentades que es converteixen en membres apreciats de la vostra família."
+
+[cleaning_description]
+other = "Professionals meticulosos que mantenen la vostra llar a la perfecció."
+
+[chef_description]
+other = "Excel·lència culinària adaptada a les vostres preferències."
+
+[pricing]
+other = "Preus"
+
+[flexible_arrangements]
+other = "Acords de temps complet, mig temps o amb residència"
+
+[temp_corporate]
+other = "Solucions temporals i de cura infantil corporativa"
+
+[regular_deep_cleaning]
+other = "Manteniment regular o neteja profunda"
+
+[corporate_cleaning]
+other = "Solucions de neteja corporativa"
+
+[diverse_expertise]
+other = "Experiència culinària diversa"
+
+[batch_cooking]
+other = "Cuina per lots i preparació de menjars"
+
+[event_catering]
+other = "Càtering per a esdeveniments especials"
+
+[custom_packages]
+other = "Paquets personalitzats"
+
+[prices_no_vat]
+other = "Els preus no inclouen IVA. Paquets personalitzats disponibles sota consulta."
+
+[contact_us_today]
+other = "Contacteu-nos avui per discutir les vostres necessitats de personal domèstic"
+
+[ready_to_start]
+other = "Preparat per Començar?"
+
+[need_help_choosing]
+other = "Necessiteu Ajuda per Triar?"
+
+[fee_help_text]
+other = "El nostre equip està aquí per ajudar-vos a seleccionar la millor opció de tarifa per a les vostres necessitats i circumstàncies específiques."
+
+[get_in_touch]
+other = "Poseu-vos en Contacte"
+
+# Highlighted blocks on homepage
+[personalized_advice]
+other = "Assessorament Personalitzat"
+
+[highly_qualified_candidates]
+other = "Candidats Altament Qualificats"
+
+[reliable_support_every_step]
+other = "Suport Fiable a Cada Pas"
+
+# Navigation
+[navToggle]
+other = "Alternar navegació"
+
+[flexible_schedule]
+other = "Horari flexible"
+
+# Fee options translations
+[option]
+other = "Opció"
+
+[one_time_fee]
+other = "Tarifa única"
+
+[monthly_salary]
+other = "Del salari mensual"
+
+[payable_upfront]
+other = "Pagable per endavant"
+
+[replacement_3months]
+other = "Garantia de substitució de 3 mesos"
+
+[direct_contract]
+other = "Contracte directe"
+
+[quitt_separate]
+other = "Quitt pagat per separat"
+
+[monthly_fee]
+other = "Tarifa mensual"
+
+[of_salary]
+other = "Del salari"
+
+[replacements_4x]
+other = "Fins a 4 substitucions"
+
+[free_service_voucher]
+other = "Val de servei gratuït"
+
+[friend_vouchers]
+other = "3 vals per a amics (50% de descompte)"
+
+[quitt_included]
+other = "Cost de Quitt inclòs"
+
+[hourly]
+other = "Per hores"
+
+[contracts]
+other = "Contractes"
+
+[min_3hours]
+other = "Mínim 3 hores"
+
+[flexible_scheduling]
+other = "Programació flexible"
+
+[replacements_extra]
+other = "Substitucions amb cost addicional"
+
+[one_time_match]
+other = "CasaCare Emparellament Únic"
+
+[membership]
+other = "Membresía CasaCare"
+
+[hourly_service]
+other = "Servei per Hores CasaCare"
+
+[monthly_salary_20]
+other = "20% del salari mensual"
+
+[hourly_contracts]
+other = "Contractes per Hores"

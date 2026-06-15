@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  <head>
+    {{ partial "headers.html" . }}
+    {{ partial "custom_headers.html" . }}
+    <style>
+      .about-wrapper {
+          background-color: #FAF8F5;
+          padding: 50px 0 80px 0;
+      }
+      .about-content-card {
+          background: #FFFFFF;
+          padding: 45px 60px 60px;
+          border-radius: 16px;
+          box-shadow: 0 15px 40px rgba(139, 115, 85, 0.08);
+          max-width: 900px;
+          margin: 0 auto;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .about-content-card:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 20px 50px rgba(139, 115, 85, 0.12);
+      }
+      .about-content {
+          font-size: 1.25rem;
+          line-height: 1.8;
+          color: #4A4A4A;
+      }
+      .about-content p {
+          text-align: justify;
+      }
+      .about-content > *:first-child {
+          margin-top: 0;
+      }
+
+      .about-content h2 {
+          color: #D4A574; 
+          margin-top: 4rem;
+          margin-bottom: 2rem;
+          font-weight: 400;
+          font-size: 2.2rem;
+          position: relative;
+          padding-bottom: 0.8rem;
+      }
+      .about-content h2::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 60px;
+          height: 3px;
+          background: #D4A574;
+          border-radius: 2px;
+      }
+      .about-content ul {
+          list-style: none;
+          padding: 0;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          gap: 15px;
+          margin-top: 30px;
+          margin-bottom: 30px;
+      }
+      .about-content li {
+          background: #F5F1EB;
+          padding: 15px 20px 15px 45px;
+          border-radius: 8px;
+          position: relative;
+          font-weight: 500;
+          color: #8B7355;
+          transition: background 0.3s;
+      }
+      .about-content li:hover {
+          background: #E8D4B8;
+      }
+      .about-content li:before {
+          content: "✔";
+          position: absolute;
+          left: 18px;
+          color: #D4A574;
+          font-weight: bold;
+      }
+      @media (max-width: 768px) {
+          .about-content-card {
+              padding: 30px;
+          }
+
+          .about-wrapper {
+              padding: 40px 0;
+          }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div id="all">
+
+        {{ partial "top.html" . }}
+
+        {{ partial "nav.html" . }}
+
+        <!-- Hero Section with Featured Image -->
+        {{ partial "hero.html" . }}
+
+        <div id="content" class="about-wrapper">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        
+                        <!-- Page Content -->
+                        <div class="about-content-card">
+                            <div class="about-content">
+                                {{ .Content }}
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#content -->
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

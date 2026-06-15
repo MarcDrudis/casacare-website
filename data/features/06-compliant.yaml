@@ -1,0 +1,5 @@
+weight: 6
+name: "Compliant"
+icon: "fas fa-file-contract"
+description: "Guidance for legal hiring, payroll, and household employment administration in Switzerland."
+url: "/payroll/"

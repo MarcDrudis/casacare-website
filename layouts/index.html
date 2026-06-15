@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  <head>
+    {{ partial "headers.html" . }}
+    {{ partial "custom_headers.html" . }}
+  </head>
+
+  <body>
+
+    <div id="all">
+
+        {{ partial "top.html" . }}
+
+        {{ partial "nav.html" . }}
+
+        <!-- Custom Hero Section with Overlay -->
+        {{ partial "hero.html" . }}
+
+        <!-- Why CasaCare? Features Section -->
+        {{ partial "features.html" . }}
+
+        <!-- Testimonials (if enabled in config) -->
+        {{ partial "testimonials.html" . }}
+
+        <!-- See More / Call to Action -->
+        {{ partial "see_more.html" . }}
+
+        <!-- Recent Posts (if blog is enabled) -->
+        {{ partial "recent_posts.html" . }}
+
+        <!-- Clients (if enabled) -->
+        {{ partial "clients.html" . }}
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

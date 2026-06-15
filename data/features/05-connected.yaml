@@ -1,0 +1,5 @@
+weight: 5
+name: "Connected"
+icon: "fas fa-users"
+description: "A strong network to help source the right household professionals for your needs."
+url: "/services/"

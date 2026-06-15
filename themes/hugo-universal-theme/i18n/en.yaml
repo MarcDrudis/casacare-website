@@ -1,0 +1,169 @@
+- id: home
+  translation: "Home"
+
+- id: portedBy
+  translation: "Ported to Hugo by"
+
+- id: contactGoTo
+  translation: "Go to contact page"
+
+- id: contactAddrTitle
+  translation: "Address"
+
+- id: contactTitle
+  translation: "Contact"
+
+- id: contactForm
+  translation: "Contact form"
+
+- id: contactName
+  translation: "Your Name"
+
+- id: contactMail
+  translation: "Your Email"
+
+- id: contactMessage
+  translation: "Your Message"
+
+- id: contactSend
+  translation: "Send Message"
+
+- id: navHome
+  translation: "go to homepage"
+
+- id: navToggle
+  translation: "Toggle Navigation"
+
+- id: categoriesTitle
+  translation: "Categories"
+
+- id: searchTitle
+  translation: "Search"
+
+- id: tagsTitle
+  translation: "Tags"
+
+- id: continueReading
+  translation: "Continue reading"
+
+- id: readMore
+  translation: "Read more"
+
+- id: authorBy
+  translation: "By"
+
+- id: recentPosts
+  translation: "Recent posts"
+
+- id: aboutUs
+  translation: "About us"
+
+- id: newer
+  translation: "Newer"
+
+- id: older
+  translation: "Older"
+
+- id: publishedOn
+  translation: "on"
+
+- id: 404Error
+  translation: "Error 404: Page not found"
+
+- id: 404Message
+  translation: "We are sorry – this page is not here anymore"
+
+- id: 404NavHome
+  translation: "Go to homepage"
+
+- id: January
+  translation: January
+
+- id: February
+  translation: February
+
+- id: March
+  translation: March
+
+- id: April
+  translation: April
+
+- id: May
+  translation: May
+
+- id: June
+  translation: June
+
+- id: July
+  translation: July
+
+- id: August
+  translation: August
+
+- id: September
+  translation: September
+
+- id: October
+  translation: October
+
+- id: November
+  translation: November
+
+- id: December
+  translation: December
+
+
+# Service card flip translations
+- id: click_for_details
+  translation: "Click for details"
+
+- id: click_to_flip_back
+  translation: "Click to flip back"
+
+- id: nurturing_nannies
+  translation: "Nurturing, experienced nannies who become cherished members of your family."
+
+- id: comprehensive_checks
+  translation: "Comprehensive background checks"
+
+- id: cpr_first_aid
+  translation: "CPR and first aid certified"
+
+- id: flexible_arrangements
+  translation: "Full-time, part-time, or live-in arrangements"
+
+- id: temp_corporate
+  translation: "Temporary and corporate childcare solutions"
+
+- id: meticulous_professionals
+  translation: "Meticulous professionals who maintain your home to perfection."
+
+- id: thoroughly_vetted
+  translation: "Thoroughly vetted specialists"
+
+- id: regular_deep
+  translation: "Regular maintenance or deep cleaning"
+
+- id: corporate_cleaning
+  translation: "Corporate cleaning solutions"
+
+- id: eco_products
+  translation: "Eco-friendly products available"
+
+- id: culinary_excellence
+  translation: "Culinary excellence tailored to your preferences."
+
+- id: diverse_expertise
+  translation: "Diverse culinary expertise"
+
+- id: customized_menus
+  translation: "Customized menus for dietary needs"
+
+- id: batch_cooking
+  translation: "Batch cooking and meal preparation"
+
+- id: event_catering
+  translation: "Event catering for special occasions"
+
+- id: michelin_background
+  translation: "Chefs with Michelin-star backgrounds"
